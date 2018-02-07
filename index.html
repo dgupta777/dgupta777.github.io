@@ -1,32 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-  
-  <link rel="stylesheet" href="style.css">
-    <script src="jquery-2.1.0.min.js"></script>
-<script src="app.js"></script>
-  </head>
+<head>
+<meta charset="UTF-8">
+<title>Website Contact Form</title>
+<script>
+function _(id){ return document.getElementById(id); }
+function submitForm(){
+	_("mybtn").disabled = true;
+	_("status").innerHTML = 'please wait ...';
+	var formdata = new FormData();
+	formdata.append( "n", _("n").value );
+	formdata.append( "e", _("e").value );
+	formdata.append( "m", _("m").value );
+	var ajax = new XMLHttpRequest();
+	ajax.open( "POST", "example_parser.php" );
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == "success"){
+				_("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+			} else {
+				_("status").innerHTML = ajax.responseText;
+				_("mybtn").disabled = false;
+			}
+		}
+	}
+	ajax.send( formdata );
+}
+</script>
+</head>
 <body>
-  <div id="form-messages"></div>
-<form id="ajax-contact" method="post" action="mailer.php">
-    <div class="field">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-
-    <div class="field">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="field">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-
-    <div class="field">
-        <button type="submit">Send</button>
-    </div>
+<form id="my_form" onsubmit="submitForm(); return false;">
+  <p><input id="n" placeholder="Name" required></p>
+  <p><input id="e" placeholder="Email Address" type="email" required></p>
+  <textarea id="m" placeholder="write your message here" rows="10" required></textarea>
+  <p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
 </form>
 </body>
 </html>
