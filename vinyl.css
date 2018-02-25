@@ -8,7 +8,7 @@ body{
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: auto;
+  background-size: 100% 100%;
 }
 .ren{
   position: absolute;
