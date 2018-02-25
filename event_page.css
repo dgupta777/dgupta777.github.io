@@ -1,0 +1,23 @@
+html{
+  padding: 0;
+  margin: 0;
+  overflow-y: visible;
+}
+body{
+  background-image: url(img/background3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.ren{
+  position: absolute;
+}
+.jecrc{
+  position: fixed;
+  left: 40%;
+}
+.all{
+  position: fixed;
+  top: 40%;
+}
