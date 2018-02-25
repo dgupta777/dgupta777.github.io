@@ -12,133 +12,38 @@ body{
   background-size: cover;
 }
 .ren{
-  margin-top: 0%;
-}
-.gwheel{
-  margin-top: 13%;
-}
-.seat1, .seat2, .seat3, .seat4, .seat5, .seat6, .seat7, .seat8{
-  transform-origin: top center;
-  animation: swing 7s infinite;
-}
-.seat1{
   position: absolute;
-  top: 34%;
-  left: 42.5%
-}
-.seat2{
-  position: absolute;
-  top: 40%;
-  left: 68%
-}
-.seat3{
-  position: absolute;
-  top: 54.5%;
-  left: 80%
-}
-.seat4{
-  position: absolute;
-  top: 69.5%;
-  left: 68%
-}
-.seat5{
-  position: absolute;
-  top: 76%;
-  left: 42%
-}
-.seat6{
-  position: absolute;
-  top: 69.5%;
-  left: 15%
-}
-.seat7{
-  position: absolute;
-  top: 54.5%;
-  left: 5%
-}
-.seat8{
-  position: absolute;
-  top: 40%;
-  left: 15%
-}
-@keyframes swing {
-  0%{-webkit-transform: rotateZ(7deg);}
-  50%{-webkit-transform: rotateZ(-7deg);}
-  100%{-webkit-transform: rotateZ(7deg);}
-}
-footer{
-  margin-top: 10%;
-  text-align: center;
-}
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50% 50%;
-}
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-instagram {
-    background: #3B5998;
-    color: white;
-}
-a{
-  color: white;
-}
-.team{
-  position: absolute;
-  top: 82%;
-  left: 70%;
-  animation: zoom 5s infinite;
-}
-@keyframes zoom {
-  50%{transform: scale(1.1);}
-}
-.prize{
-  position: absolute;
-  top: 82%;
-  left: -5%;
-}
-.left{
-  z-index: -100;
-  position: absolute;
-  top: 10%;
-  left: -75%;
-  animation: movel 5s infinite;
-  transform-origin: bottom right;
-}
-@keyframes movel {
-  50%{-webkit-transform: rotateZ(5deg);}
-}
-.right{
-  z-index: -100;
-  position: absolute;
-  top: 10%;
-  left: -4%;
-  animation: mover 5s infinite;
-}
-@keyframes mover {
-  50%{-webkit-transform: rotateZ(-5deg);}
-}
-.ballon{
-  position: absolute;
-  left: 75%;
-  top: 23%;
-  animation: ballon 5s infinite;
-}
-@keyframes ballon {
-  50%{-webkit-transform: translateY(-20px);}
 }
 .jecrc{
-  position: absolute;
-  left: 32%;
+  position: fixed;
+  left: 40%;
+}
+.wheel{
+  position: fixed;
+  bottom: 0;
+  left: 5%;
+}
+.tent{
+  position: fixed;
+  bottom: 0;
+}
+.hang{
+    -webkit-transform-origin: 50% 50%;
+    animation: hang 9s infinite;
+    z-index: -1;
+    position: absolute;
+    top: 30px;
+  }
+
+  @keyframes hang {
+    0% {
+      -webkit-transform: rotate(-10deg);
+    }
+    50% {
+      -webkit-transform: rotate(10deg);
+    }
+    100% {
+      -webkit-transform: rotate(-10deg);
+    }
+  }
 }

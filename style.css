@@ -3,27 +3,22 @@ html{
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
+  height: 100%;
+  width: 100%;
 }
 body{
   background-image: url(img/background3.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover;
-}
-.jecrc{
-  position: absolute;
-  left: 32%;
+  background-size: 100% 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 .ren{
   position: absolute;
 }
 .tent{
   position: absolute;
-  top: 80%;
-}
-.ghode{
-  position: absolute;
-  top: 30%;
-  left: 5%;
+  bottom: 0;
 }
