@@ -4,12 +4,12 @@ html{
   height: auto;
   overflow-x:hidden;
 }
-body{
-  background: url(img/background3.png) no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+bbody{
+  background-image: url(img/background3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: auto;
 }
 .ren{
   position: absolute;
