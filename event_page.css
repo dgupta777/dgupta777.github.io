@@ -2,6 +2,7 @@ html{
   padding: 0;
   margin: 0;
   overflow-y: visible;
+  overflow-x: hidden;
 }
 body{
   background: no-repeat center center fixed;
