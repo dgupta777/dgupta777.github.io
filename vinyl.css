@@ -5,7 +5,8 @@ html{
   overflow-x:hidden;
 }
 body{
-  background-image: url(img/background3.png);
+  background-color: blue;
+  /*background-image: url(img/background3.png);*/
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
