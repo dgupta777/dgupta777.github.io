@@ -1,97 +1,39 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Darshit - My Portfolio</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="dist/jquery.fullscreen-popup.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
-  <style media="screen">
-    body{
-      background-color: #fdc689;
-      padding: 0;
-      margin: 0;
-    }
-    .card{
-      margin-top: 10%;
-    }
-    .footer{
-      text-align: center;
-      background-color: black;
-      color: white;
-      /* margin-top: -40px; */
-      opacity: 0.5;
-      font-size: 2em;
-    }
-    .footer a{
-      color: white;
-    }
-    .social{
-      text-align: center;
-      margin-top: -65px;
-    }
-    .photo{
-      box-shadow: 10px 10px 5px grey;
-    }
-    .fa{
-      font-size: 1.5em;
-      color: white;
-    }
-    .detail{
-      position: absolute;
-      right: 0;
-      margin-right: 20px;
-      text-align: right;
-    }
-    .detail a{
-      color: white;
-      font-size: 0.7em;
-      pointer-events: none;
-    }
-  </style>
-
-</head>
-
-<body>
-  <!--<div class="container">
-    <div class="col-md-4 col-xs-12"></div>
-    <div class="col-md-4 col-xs-12 center-block card">
-      <div class="detail">
-        <a><span class="fa fa-envelope"></span>&nbsp;&nbsp; darshitgupta777@gmail.com</a><br>
-        <a><span class="fa fa-phone"></span>&nbsp;&nbsp;  7737170916</a>
+  <head>
+    <meta charset="utf-8">
+    <title>JECRC Foundation</title>
+    <link rel="stylesheet" href="main20.css">
+  </head>
+  <body>
+    <header id="pageHeader">
+      <h1>JECRC Foundation</h1>
+    </header>
+    <section id="mainSection">
+      <div class="heading">
+        <h3>Want Your Certificate??</h3>
+        <h2>Come Get Some....</h2>
       </div>
-      <img src="for_card.jpg" class="photo" width="100%" height="100%" alt="">
-      <div class="social center-block">
-        <a href="https://www.linkedin.com/in/darshit-gupta-bb678314a/"><span class="fa fa-linkedin"></span></a> &nbsp;&nbsp;
-        <a href="https://github.com/dgupta777"><span class="fa fa-github"></span></a> &nbsp;&nbsp;
-        <a href="https://twitter.com/darshit_dg777"><span class="fa fa-twitter"></span></a> &nbsp;&nbsp;
-        <a href="mailto:darshitgupta777@gmail.com"><span class="fa fa-envelope"></span></a> &nbsp;&nbsp;
-        <a href="tel:7737170916"><span class="fa fa-phone"></span></a>
+      <div class="option">
+        <button type="button" name="button" onclick="window.location = 'form.html';">Academic</button>
+        <button type="button" name="button" onclick="window.location = 'form.html';">Dusre Koi</button>
       </div>
-      <div class="footer">
-        <a href="mailto:darshitgupta777@gamil.com">Contact</a>
+    </section>
+    <aside id="pageAside">
+      <div class="heading">
+        <h1>Taza Khabare</h1>
+        <h3>Garama-Garam</h3>
       </div>
-    </div>
-    <div class="col-md-4 col-xs-12"></div>
-  </div>-->
-  <form role="form" id="contact-form" class="contact-form" name="contact-form" action="https://formspree.io/darshitgupta777@gmail.com" method="post">
-    <input type="text" name="mame" class="form-control" required="required" placeholder="Student Name"><br>
-    <input type="text" name="branch" class="form-control" required="required" placeholder="Branch"><br>
-    <input type="text" name="mobile" class="form-control" required="required" placeholder="Mobile Number"><br>
-    <button type="submit" class="btn btn-send ">
-      Submit
-    </button>
-  </form>
-</body>
-
+      <div class="news">
+        <ul>
+          <li>Munni naam ki ladki Pakistan chord aayi India.</li>
+          <li>Jo yeh news pade uski 3rd sem me do back.</li>
+        </ul>
+        <h4>Baki khabare break k baad.</h4>
+      </div>
+    </aside>
+    <footer id="pageFooter">
+      <p>Developed & Mantained by <a href="#">Darshit Gupta</a>.</p>
+    </footer>
+  </body>
 </html>
